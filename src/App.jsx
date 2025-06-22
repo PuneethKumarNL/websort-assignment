@@ -1,14 +1,35 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+
 
 const App = () => {
   return (
     <div className="bg-gradient-to-br from-gray-900 to-black min-h-screen text-white font-inter">
-      <NavBar />\
+      <nav className="flex items-center justify-between p-6 relative z-10">
+        <div className="flex items-center">
+          <img
+            src="https://res.cloudinary.com/dszd8jabc/image/upload/v1750621120/2fdcf92ce27321079a9002edc684fad273c7e610_xbhnvj.png"
+            alt="Logo"
+            className="rounded-full mr-2"
+          />
+        </div>
+        <div className="hidden md:flex space-x-6">
+          <a href="#" className="hover:text-purple-400 transition duration-300">
+            About Us
+          </a>
+          <a href="#" className="hover:text-purple-400 transition duration-300">
+            Services
+          </a>
+          <a href="#" className="hover:text-purple-400 transition duration-300">
+            Projects
+          </a>
+          <a href="#" className="hover:text-purple-400 transition duration-300">
+            Careers
+          </a>
+        </div>
+        {/* Mobile menu button will go here later */}
+      </nav>
       <section className="relative h-[70vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-    
         <div className="absolute top-0 left-0 w-full h-full opacity-20">
           <div className="absolute w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob top-10 left-20"></div>
           <div className="absolute w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 top-40 right-20"></div>
@@ -30,11 +51,9 @@ const App = () => {
           </button>
         </div>
       </section>
-     
       <section className="py-20 px-6 text-center">
         <h2 className="text-4xl font-bold mb-12">Our Project</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          
           <div className="bg-gray-800 rounded-2xl p-6 shadow-xl transform transition duration-300 hover:scale-105">
             <img
               src="https://res.cloudinary.com/dszd8jabc/image/upload/v1750620786/aa65fe867c31b42c007cd24e67e251d288917393_gbebjk.jpg"
@@ -43,7 +62,7 @@ const App = () => {
             />
             <h3 className="text-2xl font-semibold">App Development</h3>
           </div>
-        
+
           <div className="relative  rounded-2xl p-6 shadow-2xl transform transition duration-300 hover:scale-105 border-4 border-purple-400">
             <div className="absolute inset-0 p-4 flex items-center justify-center">
               <img
@@ -54,7 +73,7 @@ const App = () => {
             </div>
             <h3 className="text-4xl font-extrabold relative z-10">UI/UX</h3>
           </div>
-        
+
           <div className="bg-gray-800 rounded-2xl p-6 shadow-xl transform transition duration-300 hover:scale-105">
             <img
               src="https://res.cloudinary.com/dszd8jabc/image/upload/v1750621120/055c1fe8a92fb48ac917a89f08452005d34671dd_gfhc1v.jpg"
@@ -68,7 +87,6 @@ const App = () => {
           </div>
         </div>
       </section>
-     
       <section className="py-20 px-6 text-center bg-gray-900">
         <h2 className="text-4xl font-bold mb-4">
           Fueling the Future with Innovation
@@ -84,14 +102,11 @@ const App = () => {
           See Our Projects
         </button>
       </section>
-   
       <section className="py-20 px-6 text-center">
         <h2 className="text-4xl font-bold mb-12">
           See Our Work in Web Design & Development
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto text-center">
-        
-
           <p className="text-2xl text-gray-300 ">
             We specialize in building responsive, user-friendly websites
             tailored to client needs. Take a look at our recent projects to see
@@ -106,7 +121,6 @@ const App = () => {
           </div>
         </div>
       </section>
-     
       <section className="py-20 px-6 text-center bg-gray-900">
         <h2 className="text-4xl font-bold mb-12">Why We Stand Out</h2>
         <div className="flex flex-col md:flex-row items-center justify-center max-w-5xl mx-auto">
@@ -119,7 +133,6 @@ const App = () => {
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center">
-           
             <img
               className="w-3xs h-72 mb-6 md:mb-0"
               src="https://res.cloudinary.com/dszd8jabc/image/upload/v1750621120/6afdf3aef40aa3f791ec415881544cf6f679ab71_a6dag9.png"
@@ -128,7 +141,6 @@ const App = () => {
           </div>
         </div>
 
-        
         <div className="mt-20">
           <h3 className="text-3xl font-bold mb-8">
             One of our product achievements
@@ -161,10 +173,8 @@ const App = () => {
           </div>
         </div>
       </section>
-     
       <section className="py-20 px-6 relative overflow-hidden">
         <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
           <div className="text-left">
             <h2 className="text-5xl font-bold leading-tight mb-4">
               Questions?
@@ -178,7 +188,6 @@ const App = () => {
             </p>
           </div>
 
-         
           <div className="bg-gray-800 rounded-2xl p-8 shadow-2xl">
             <form>
               <div className="mb-6">
@@ -249,7 +258,6 @@ const App = () => {
           </div>
         </div>
       </section>
-     
       <section className="py-20 px-6 text-center bg-gray-900">
         <h2 className="text-4xl font-bold mb-8">
           See what opportunities await you
@@ -258,8 +266,30 @@ const App = () => {
           Explore More
         </button>
       </section>
-      
-      <Footer />
+      <footer className="bg-black py-10 px-6 text-center text-gray-400">
+        <div className="flex items-center justify-center mb-4">
+          <img
+            src="https://res.cloudinary.com/dszd8jabc/image/upload/v1750621120/2fdcf92ce27321079a9002edc684fad273c7e610_xbhnvj.png"
+            alt="Logo"
+            className="rounded-full mr-2"
+          />
+        </div>
+        <p>&copy; {new Date().getFullYear()} WebDart. All rights reserved.</p>
+        <div className="flex justify-center space-x-6 mt-4">
+          <a href="#" className="hover:text-purple-400">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" className="hover:text-purple-400">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="#" className="hover:text-purple-400">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" className="hover:text-purple-400">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };
